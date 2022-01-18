@@ -1,3 +1,5 @@
+---
+layout: default
+---
 
-layout: false
-
+<div id="ace-content" class="ace-container-shift">
