@@ -1115,7 +1115,7 @@ Change_WARP_DualStack_IPv6Out() {
     Print_WARP_WireGuard_Status
 }
 
-Menu_Title="${FontColor_Yellow_Bold}Cloudflare WARP 一键配置脚本${FontColor_Suffix} ${FontColor_Red}[${shVersion}]${FontColor_Suffix}"
+Menu_Title="${FontColor_Yellow_Bold}Cloudflare WARP 一键配置脚本${FontColor_Suffix} ${FontColor_Red}[${shVersion}]"
 
 Menu_WARP_Client() {
     clear
