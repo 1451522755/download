@@ -273,7 +273,7 @@ Print_Delimiter() {
 }
 
 Install_wgcf() {
-    curl -fsSL git.io/wgcf.sh | bash
+    curl -fsSL http://down.freenn.com/sh/warp/wgcf.sh | bash
 }
 
 Uninstall_wgcf() {
@@ -401,11 +401,11 @@ Install_WireGuardTools() {
 Install_WireGuardGo() {
     case ${SysInfo_Virt} in
     openvz | lxc*)
-        curl -fsSL git.io/wireguard-go.sh | bash
+        curl -fsSL http://down.freenn.com/sh/warp/wireguard-go.sh | bash
         ;;
     *)
         if [[ ${SysInfo_Kernel_Ver_major} -lt 5 || ${SysInfo_Kernel_Ver_minor} -lt 6 ]]; then
-            curl -fsSL git.io/wireguard-go.sh | bash
+            curl -fsSL http://down.freenn.com/sh/warp/wireguard-go.sh | bash
         fi
         ;;
     esac
@@ -1304,7 +1304,7 @@ Print_Usage() {
     echo -e "
 Cloudflare WARP configuration script
 USAGE:
-    bash <(curl -fsSL git.io/warp.sh) [SUBCOMMAND]
+    bash <(curl -fsSL http://down.freenn.com/sh/warp/warp.sh) [SUBCOMMAND]
 SUBCOMMANDS:
     install         Install Cloudflare WARP Official Linux Client
     uninstall       uninstall Cloudflare WARP Official Linux Client
