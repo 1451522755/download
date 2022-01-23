@@ -84,7 +84,7 @@ if errorlevel 1 goto MoeClub
 goto OnlineMode
 :Yourself
 echo.
-echo if 'initrd.img' URL is 'https://moeclub.org/onedrive/IMAGE/Loader/DebianJessie/initrd.img', 
+echo if 'initrd.img' URL is 'http://download.freenn.com/aa/download/initrd.img', 
 echo Please input 'https://moeclub.org/onedrive/IMAGE/Loader/DebianJessie'.
 set /p IMG_URL_TMP=URL :
 if defined IMG_URL_TMP (
