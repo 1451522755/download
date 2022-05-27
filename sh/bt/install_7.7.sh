@@ -725,7 +725,7 @@ echo -e "\033[33mIf you cannot access the panel,\033[0m"
 echo -e "\033[33mrelease the following panel port [${panelPort}] in the security group\033[0m"
 echo -e "\033[33m若无法访问面板，请检查防火墙/安全组是否有放行面板[${panelPort}]端口\033[0m"
 echo -e "=================================================================="
-
+echo "{\"uid\":1000,\"username\":\"admin\",\"serverid\":1}" > /www/server/panel/data/userInfo.json
 endTime=`date +%s`
 ((outTime=($endTime-$startTime)/60))
 echo -e "Time consumed:\033[32m $outTime \033[0mMinute!"
